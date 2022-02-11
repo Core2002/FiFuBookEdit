@@ -38,6 +38,7 @@ namespace FiFu书编辑器
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -98,9 +99,9 @@ namespace FiFu书编辑器
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(499, 52);
+            this.button4.Location = new System.Drawing.Point(499, 91);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 39);
+            this.button4.Size = new System.Drawing.Size(112, 34);
             this.button4.TabIndex = 6;
             this.button4.Text = "保存";
             this.button4.UseVisualStyleBackColor = true;
@@ -109,7 +110,7 @@ namespace FiFu书编辑器
             // button5
             // 
             this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(499, 97);
+            this.button5.Location = new System.Drawing.Point(499, 131);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(112, 33);
             this.button5.TabIndex = 7;
@@ -139,11 +140,22 @@ namespace FiFu书编辑器
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(499, 52);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(112, 33);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "新建文件";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 535);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -154,6 +166,7 @@ namespace FiFu书编辑器
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FiFu 书编辑器 By.钟小白Core";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -172,6 +185,7 @@ namespace FiFu书编辑器
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
